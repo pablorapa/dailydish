@@ -4,195 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daily Dish por Enrico Rapalin - health & lifestyle</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="responsive.css">
+    <title>Enrico Rapalin - health & lifestyle</title>
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
 </head>
 <body>
-
-    <header>
-        <div class='wrapper'>
-            <a href="" class="desktop"><img src="assets/daily-logo.png" alt="logo"></a>
-            <a href="" class="mobile"><img src="assets/daily-footer.png" alt=""></a>
-            <nav>
-                <a href="" id="hamb" class="mobile"><i class="fas fa-bars"></i></a>
-                <ul>
-                    <li>
-                        <a href="http://op1.html">recetas</a>
-                    </li>
-                    <li>
-                        <a href="http://op2.html">fast good</a>
-                    </li>
-                    <li>
-                        <a href="http://op3.html">tips</a>
-                    </li>
-                    <li>
-                        <a href="http://op4.html">health</a>
-                    </li>         
-                    <li>
-                        <a href="http://op5.html">acerca de</a>
-                    </li>                         
-                </ul>       
-            </nav>
+    <div id="contenedor">
+        <div class="header">
+            <div class='wrapper'>
+                <div>
+                    <a href="" class="desktop"><img src="assets/daily-logo.png" alt="logo"></a>
+                    <a href="" class="mobile"><img src="assets/daily-footer.png" alt=""></a>
+                </div>
+                <nav>
+                    <a href="" id="hamb" class="mobile"><i class="fas fa-bars"></i></a>
+                    <ul class="desktop">
+                        <li>
+                            <a href="http://op1.html">recetas</a>
+                        </li>
+                        <li>
+                            <a href="http://op2.html">fast good</a>
+                        </li>
+                        <li>
+                            <a href="http://op3.html">tips</a>
+                        </li>
+                        <li>
+                            <a href="http://op4.html">health</a>
+                        </li>         
+                        <li>
+                            <a href="http://op5.html">acerca de</a>
+                        </li>                         
+                    </ul>   
+                    <form action="buscar.do" >
+                        <input type="text" name="searchText" id="searchText"/>
+                        <input type="submit" name="search" id="search"/>
+                    </form>     
+                </nav>
+            </div>
         </div>
-    </header>
-
-    <div class='wrapper'>
-
-        <main>
-            <h1>lo ultimo</h1>
-            <ul class="" id="ListaRecetas" style="position: relative;">
-                <li class="item" style="position: absolute; left: 0px; top: 0px;">
-                    <article class="">
-                        <figure class="">
-                            <a href="">
-                                <img class="" src="assets/comida.png" alt="Este es una plato de comida">
-                            </a>
-                        </figure>
-                        <header class="">
-                            <h1>
-                                <a class="" onclick="" href="">Lemon Pie</a>
-                            </h1>
-                        </header>
-                        <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
-                        <footer>
-                            <a class="btn btn-more hvr-shutter-out-horizontal" href=>Ver Receta</a>
-                        </footer>
-                    </article>
-                </li>
-            </ul>
-            <ul class="" id="ListaRecetas" style="position: relative;">
-                <li class="item" style="position: absolute; left: 0px; top: 0px;">
-                    <article class="">
-                        <figure class="">
-                            <a href="">
-                                <img class="" src="assets/comida.png" alt="Este es una plato de comida">
-                            </a>
-                        </figure>
-                        <header class="">
-                            <h1>
-                                <a class="" onclick="" href="">Lemon Pie</a>
-                            </h1>
-                        </header>
-                        <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
-                        <footer>
-                            <a class="btn btn-more hvr-shutter-out-horizontal" href=>Ver Receta</a>
-                        </footer>
-                    </article>
-                </li>
-            </ul>
-            <ul class="" id="ListaRecetas" style="position: relative;">
-                <li class="item" style="position: absolute; left: 0px; top: 0px;">
-                    <article class="">
-                        <figure class="">
-                            <a href="">
-                                <img class="" src="assets/comida.png" alt="Este es una plato de comida">
-                            </a>
-                        </figure>
-                        <header class="">
-                            <h1>
-                                <a class="" onclick="" href="">Lemon Pie</a>
-                            </h1>
-                        </header>
-                        <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
-                        <footer>
-                            <a class="btn btn-more hvr-shutter-out-horizontal" href=>Ver Receta</a>
-                        </footer>
-                    </article>
-                </li>
-            </ul>
-            <ul class="" id="ListaRecetas" style="position: relative;">
-                <li class="item" style="position: absolute; left: 0px; top: 0px;">
-                    <article class="">
-                        <figure class="">
-                            <a href="">
-                                <img class="" src="assets/comida.png" alt="Este es una plato de comida">
-                            </a>
-                        </figure>
-                        <header class="">
-                            <h1>
-                                <a class="" onclick="" href="">Lemon Pie</a>
-                            </h1>
-                        </header>
-                        <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
-                        <footer>
-                            <a class="btn btn-more hvr-shutter-out-horizontal" href=>Ver Receta</a>
-                        </footer>
-                    </article>
-                </li>
-            </ul>
-            <ul class="" id="ListaRecetas" style="position: relative;">
-                <li class="item" style="position: absolute; left: 0px; top: 0px;">
-                    <article class="">
-                        <figure class="">
-                            <a href="">
-                                <img class="" src="assets/comida.png" alt="Este es una plato de comida">
-                            </a>
-                        </figure>
-                        <header class="">
-                            <h1>
-                                <a class="" onclick="" href="">Lemon Pie</a>
-                            </h1>
-                        </header>
-                        <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
-                        <footer>
-                            <a class="btn btn-more hvr-shutter-out-horizontal" href=>Ver Receta</a>
-                        </footer>
-                    </article>
-                </li>
-            </ul>
-            <ul class="" id="ListaRecetas" style="position: relative;">
-                <li class="item" style="position: absolute; left: 0px; top: 0px;">
-                    <article class="">
-                        <figure class="">
-                            <a href="">
-                                <img class="" src="assets/comida.png" alt="Este es una plato de comida">
-                            </a>
-                        </figure>
-                        <header class="">
-                            <h1>
-                                <a class="" onclick="" href="">Lemon Pie</a>
-                            </h1>
-                        </header>
-                        <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
-                        <footer>
-                            <a class="btn btn-more hvr-shutter-out-horizontal" href=>Ver Receta</a>
-                        </footer>
-                    </article>
-                </li>
-            </ul>
-            <ul class="" id="ListaRecetas" style="position: relative;">
-                <li class="item" style="position: absolute; left: 0px; top: 0px;">
-                    <article class="">
-                        <figure class="">
-                            <a href="">
-                                <img class="" src="assets/comida.png" alt="Este es una plato de comida">
-                            </a>
-                        </figure>
-                        <header class="">
-                            <h1>
-                                <a class="" onclick="" href="">Lemon Pie</a>
-                            </h1>
-                        </header>
-                        <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
-                        <footer>
-                            <a class="btn btn-more hvr-shutter-out-horizontal" href=>Ver Receta</a>
-                        </footer>
-                    </article>
-                </li>
-            </ul>    
-                                
-        </main>
+        <div class='wrapper'>
+            <main>
+                <h1>lo ultimo</h1>
+                <ul class="" id="ListaRecetas" style="position: relative;">
+                    <li class="item">
+                        <article class="">
+                            <figure class="">
+                                <a href="">
+                                    <img height="150" width="150" src="assets/comida.png" alt="Este es un plato de comida">
+                                </a>
+                            </figure>
+                            <header class="">
+                                <h1>
+                                    <a class="" onclick="" href="">Lemon Pie</a>
+                                </h1>
+                            </header>
+                            <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
+                            <a href="">Ver mas...</a>
+                        </article>
+                    </li>
+                    <li class="item">
+                        <article class="">
+                            <figure class="">
+                                <a href="">
+                                    <img height="150" width="150" src="assets/comida.png" alt="Este es un plato de comida">
+                                </a>
+                            </figure>
+                            <header class="">
+                                <h1>
+                                    <a class="" onclick="" href="">Lemon Pie</a>
+                                </h1>
+                            </header>
+                            <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
+                            <a href="">Ver mas...</a>
+                        </article>
+                    </li>
+                    <li class="item">
+                        <article class="">
+                            <figure class="">
+                                <a href="">
+                                    <img height="150" width="150" src="assets/comida.png" alt="Este es un plato de comida">
+                                </a>
+                            </figure>
+                            <header class="">
+                                <h1>
+                                    <a class="" onclick="" href="">Lemon Pie</a>
+                                </h1>
+                            </header>
+                            <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
+                            <a href="">Ver mas...</a>
+                        </article>
+                    </li>
+                    <li class="item">
+                        <article class="">
+                            <figure class="">
+                                <a href="">
+                                    <img height="150" width="150" src="assets/comida.png" alt="Este es un plato de comida">
+                                </a>
+                            </figure>
+                            <header class="">
+                                <h1>
+                                    <a class="" onclick="" href="">Lemon Pie</a>
+                                </h1>
+                            </header>
+                            <p>Cómo vamos a hacer un merengue con claras batidas, vamos a pasteurizada los huevos. Colocar 2 huevos en una olla con agua. Llevarla a fuego a una temperatura en la que podamos dejar el dedo unos segundos y no aguantemos mucho tiempo. No te vayas a quemar!!. Si tenes ...</p>
+                            <a href="">Ver mas...</a>
+                        </article>
+                    </li>
+                </ul>
+                                    
+            </main>
+        </div>
+    
+        <footer>
+            <div class='wrapper'>
+                <img src="assets/daily-footer.png" alt="">
+                <p>C 2019 - Todos los derechos reservados</p>
+            </div>
+        </footer>
     </div>
-
-    <footer>
-        <div class='wrapper'>
-            <img src="assets/daily-footer.png" alt="">
-            <p>C 2018 - Todos los derechos reservados</p>
-        </div>
-    </footer>
-
     <script src="assets/jquery.min.js"></script>
     <script src="assets/f.js"></script>
 
