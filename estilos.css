@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,900');
 
+
+
+/*
+    GENERALES
+*/
 * {
     margin: 0;
     padding-top: 0;
@@ -11,9 +16,25 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    height: 100%;
     background-image: url("assets/fondo.jpg");
     background-color: #fff;
 }
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contenedor{
+    min-height: 100%;
+    position: relative;
+}
+
+/*
+    ENCABEZADO
+*/
 
 .header {
     width: 100%;
@@ -21,10 +42,6 @@ body {
     background-color: rgba(25, 20, 20, .4);
     padding: 20px 0;
     margin-bottom: 30px;
-}
-
-.header > a, header > img {
-    display: inline-block;
 }
 
 .header nav {
@@ -96,23 +113,53 @@ body {
 }
 
 .header nav ul li a:hover:after {
-    /*width: 85%;*/
+    width: 85%;
 }
 
 .header nav ul li a:hover {
     color: #C0CBDE;
 }
 
-.imageReceta {
-    height: "100";
-    width: "100";
+
+
+
+/*
+    GALERIA
+*/
+
+.grid {
+    text-align: center;
 }
+.grid figure{
+    display: inline-block;
+}
+
+.imageReceta {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .2s; /* Animation */
+    overflow: hidden;
+}
+
+.imgBox {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.imgBox:hover img{
+    transform: scale(1.1); 
+  }
+
+
+/*
+    FOOTER
+*/
 
 footer {
     padding: 60px 20px 40px;
-    color: #333;
-    background-color: #80623c;
-    margin-top: 30px;
+    color: #fff;
+    background-color: #4D4646;
 }
 
 footer p {
@@ -127,45 +174,13 @@ footer p {
     margin: 5px 0px;
 }
 
-main {
-    width: auto;
-    display: inline-block;
-    background-color: #fff;
-    border-radius: 0px;
-    padding: 30px 35px;
-    box-sizing: border-box;
-    vertical-align: top;
-}
-
-main ul {
-    display: inline-block;
-    margin: 5px auto;
-    columns: 4;
-}
-
-main ul li {
-    list-style: none;
-   /* display: inline-block; */
-    margin: 0 5px;
-}
-
-main ul li article {
-    position: relative;
-    display: inline-block;
-    padding: 15px 5px;
-    margin-bottom: 5px;
-}
-
-main:after {
-    content:"";
-    display: block;
-    clear: both;
-}
 
 
-.grid figure{
-    display: inline-block;
-}
+
+/*
+    RESPONSIVE
+*/
+
 
 .mobile {
     display: none;
@@ -174,79 +189,9 @@ main:after {
 .desktop {
     display: block;
 }
-section {
-    box-shadow: 3px 3px 10px #aaa;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 5px;
-    margin: 30px 1%;
-    padding: 25px;
-    background-color: #fff;
-    width: 48%;
-    float: left;
-    max-height: 300px;
-    overflow-y: auto;
-}
 
-section h2, section h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
 
-section p {
-    margin-bottom: 15px;
-}
 
-section p:last-child {
-    margin-bottom: 0px;
-}
-
-.wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    position: relative;
-}
-/*
-.item {
-  position: relative;
-  width: 50%;
-}
-*/
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  /*
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgb(53, 56, 46);
-  }
-  
-  .item:hover .overlay {
-    opacity: 0.7;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-*/
 
 @media (max-width: 480px) {
 
