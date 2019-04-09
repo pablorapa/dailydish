@@ -121,11 +121,24 @@ body {
 }
 
 
-
-
 /*
     GALERIA
 */
+
+.buscador {
+    margin-bottom: 15px;
+}
+
+.buscador input[type="submit"]{
+    background-color: transparent;
+    border: none;
+    padding: 3px 8px;
+    background-image: url("assets/lupa.png");
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 32px;
+    background-size: contain;
+}
 
 .grid {
     text-align: center;

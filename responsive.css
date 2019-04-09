@@ -24,12 +24,20 @@
     }
 
     .header nav ul {
+        background-color: rgba(25, 20, 20, .4);
         display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        padding-left: 20px;
+        padding-top: 40px;
     }
 
     .header nav ul li {
         display: block;
-        background-color: #80623c;
         text-align: center;
     }
 
