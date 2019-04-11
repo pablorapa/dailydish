@@ -13,47 +13,48 @@
 </head>
 <body>
     <div id="contenedor">
-        <div class="header">
-            <div class='wrapper'>
-                <div>
-                    <h1 id="titulo1">
-                      <span style="letter-spacing:0.15em;">
-                        <span style="font-size:29px;">
-                          <a href="index.html">ENRICO</a>
-                        </span>
-                      </span>
-                    </h1>
-                    <h1 id="titulo2">
-                      <span style="letter-spacing:0.22em;">
-                        <span style="font-size:29px;">
-                            <a href="index.html">rapalin</a>
-                        </span>
-                      </span>
-                    </h1>
-                </div>
-                <nav>
-                    <a href="" id="hamb" class="mobile"><i class="fas fa-bars"></i></a>
-                    <ul class="desktop">
-                        <a href="#" id="cerrar" class="mobile">X</a>
-                        <li>
-                            <a href="index.html">recetas</a>
-                        </li>
-                        <li>
-                            <a href="talleres.html">talleres</a>
-                        </li>
-                        <li>
-                            <a href="prensa.html">prensa</a>
-                        </li>
-                        <li>
-                            <a href="sobre-mi.html">sobre mi</a>
-                        </li>         
-                        <li>
-                            <a href="#">contacto</a>
-                        </li>                         
-                    </ul> 
-                </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+              <div class="navbar-brand js-scroll-trigger" href="#page-top">
+                <h1 id="titulo1">
+                  <span style="letter-spacing:0.15em;">
+                    <span style="font-size:29px;">
+                      <a class="js-scroll-trigger" href="#page-top">ENRICO</a>
+                    </span>
+                  </span>
+                </h1>
+                <h1 id="titulo2">
+                  <span style="letter-spacing:0.22em;">
+                    <span style="font-size:29px;">
+                        <a class="js-scroll-trigger" href="#page-top">rapalin</a>
+                    </span>
+                  </span>
+                </h1>
             </div>
-        </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#recetas">recetas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#talleres">talleres</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#prensa">prensa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#sobre">sobre mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contacto">contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div class="wrapper buscador">
           <h1>recetas</h1>
           <div>
@@ -114,12 +115,14 @@
           </div>
         </div>
     
-        <footer>
-            <div class='wrapper'>
-                Enrico Rapalin
-                <p>© 2019 - Todos los derechos reservados</p>
+        <footer class="py-5 bg-dark">
+            <div class="container">
+              <p class="m-0 text-center text-white">
+                  Enrico Rapalin
+                  <p class="m-0 text-white">&copy; 2019 - Todos los derechos reservados</p>
             </div>
-        </footer>
+            <!-- /.container -->
+          </footer>
     </div>
     <script src="assets/jquery.min.js"></script>
     <script src="assets/f.js"></script>
