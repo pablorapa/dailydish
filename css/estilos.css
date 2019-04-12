@@ -1,0 +1,64 @@
+/*
+    GENERALES
+*/
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+
+/*
+    ENCABEZADO
+*/
+
+#mainNav {
+    background-color: rgba(25, 20, 20, .8);
+}
+
+#titulo1 {
+    margin: 0%;
+    font: normal normal bold 15px/1.4em raleway,sans-serif;
+    font-size:29px; 
+    line-height:1em; 
+    text-align:justify;
+}
+
+#titulo1 a, #titulo2 a {
+    text-decoration: none;
+    color:rgba(238, 224, 203, 1);
+}
+
+
+#titulo2 {
+    margin: 0%;
+    font: normal normal normal 15px/1.4em raleway,sans-serif;
+    font-size:29px; 
+    text-align:justify;
+}
+
+#navbarResponsive ul li a {
+    color: #F3F2DC;
+    position: relative;
+    -webkit-transition: color 0.3s; /* For Safari 3.0 to 6.0 */
+    transition: color 0.3s; /* For modern browsers */
+}
+
+
+#navbarResponsive ul li a:after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    transition: all .2s ease-in;
+}
+
+#navbarResponsive ul li a:hover:after {
+    width: 85%;
+}
+
+#navbarResponsive ul li a:hover {
+    color: #C0CBDE;
+}
