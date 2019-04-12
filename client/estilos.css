@@ -36,6 +36,10 @@ body {
     ENCABEZADO
 */
 
+#mainNav {
+    background-color: rgba(25, 20, 20, .8);
+}
+
 #titulo1 {
     margin: 0%;
     font: normal normal bold 15px/1.4em raleway,sans-serif;
@@ -56,90 +60,33 @@ body {
     font-size:29px; 
     text-align:justify;
 }
-.header {
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgba(25, 20, 20, .5);
-    padding: 20px 0;
-    margin-bottom: 30px;
-}
 
-.header nav {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 10px;
-}
-
-.header nav form {
-    display: inline-block;
-}
-
-.header nav form input[type="text"] {
-    background-color: rgba(238, 224, 203, 1);
-    border: none;
-    padding: 3px 8px;
-    width: 100px;
-    margin-right: 10px;
-    margin-left: 30px;
-}
-
-.header nav form input[type="submit"], header nav form button[type="submit"] {
-    background-color: transparent;
-    border: none;
-    padding: 3px 8px;
-    background-image: url("assets/lupa.png");
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    width: 32px;
-    background-size: contain;
-}
-
-.header nav form label {
-    display: none;
-}
-
-.header nav ul {
-    display: inline-block;
-}
-
-.header nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.header nav ul li a {
-    text-decoration: none;
+#navbarResponsive ul li a {
     color: #F3F2DC;
-    font-weight: 300;
     position: relative;
-    display: inline-block;
-    padding: 15px 5px;
     -webkit-transition: color 0.3s; /* For Safari 3.0 to 6.0 */
     transition: color 0.3s; /* For modern browsers */
-
 }
 
-.header nav ul li a:after {
+
+#navbarResponsive ul li a:after {
     content: "";
     width: 0px;
     height: 2px;
     background-color: #fff;
     position: absolute;
     left: 5px;
-    bottom: 15px;
+    bottom: 5px;
     transition: all .2s ease-in;
 }
 
-.header nav ul li a:hover:after {
+#navbarResponsive ul li a:hover:after {
     width: 85%;
 }
 
-.header nav ul li a:hover {
+#navbarResponsive ul li a:hover {
     color: #C0CBDE;
 }
-
 
 /*
     GALERIA
