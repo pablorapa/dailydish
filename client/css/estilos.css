@@ -1,11 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,900');
+
+
+
 /*
     GENERALES
 */
+* {
+    margin: 0;
+    padding-top: 0;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
+.wrapper {
+    max-width: 960px!important;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contenedor{
+    min-height: 100%;
+    position: relative;
+}
 
 /*
     ENCABEZADO
@@ -36,6 +58,13 @@ body {
     text-align:justify;
 }
 
+
+.slogan p{
+    font-size: 5rem;
+    line-height: 3rem;
+    margin-bottom: 0px;
+}
+
 #navbarResponsive ul li a {
     color: #F3F2DC;
     position: relative;
@@ -61,4 +90,177 @@ body {
 
 #navbarResponsive ul li a:hover {
     color: #C0CBDE;
+}
+
+.selected {
+    font-weight: bold;
+    color:#C0CBDE!important;
+}
+
+
+#toTop {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #428194;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 100%;
+    transition: opacity 0.33s ease-in-out, visibility 0.33s ease-in;
+}
+
+#toTop a {
+    text-decoration: none;
+    color: white;
+}
+
+#toTop ion-icon {
+    font-size: 32px;
+}
+
+.is-visible {
+	visibility: visible!important;
+	opacity: 1!important;
+}
+
+/*
+    GALERIA
+*/
+
+.buscador {
+    margin-bottom: 3%;
+    margin-left: 14%!important;
+    margin-right: 14%!important;
+    color: #000;
+}
+
+.buscador h1 {
+    font-size: 4rem;
+}
+
+.buscador input {
+	outline: none;
+}
+
+.buscador input[type='search']{
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+	background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 10px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+	width: 15px;
+	color: transparent;
+	cursor: pointer;
+}
+.buscador input::-webkit-search-decoration,
+.buscador input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+.buscador input[type=search]:focus {
+	width: 200px;
+	background-color: #fff;
+    border-color: #66CC75;
+    color: black;
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+	padding-left: 32px;
+	cursor: auto;
+}
+
+.buscador input:-moz-placeholder {
+	color: transparent;
+}
+.buscador input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.grid {
+    text-align: center;
+}
+.grid figure{
+    display: inline-block;
+}
+
+.imageReceta {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.imgBox {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.imgBox:hover img{
+    transform: scale(1.1); 
+}
+
+.recipe-detail{
+}
+
+/*
+    FOOTER
+*/
+
+footer {
+    padding: 60px 20px 40px;
+    color: #fff;
+    background-color: #4D4646;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer img {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 5px 0px;
+}
+
+
+
+
+/*
+    RESPONSIVE
+*/
+
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+
+
 }

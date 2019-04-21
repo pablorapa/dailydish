@@ -24,8 +24,8 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+    <div class="container wrapper">
       <div class="navbar-brand js-scroll-trigger" href="#page-top">
         <h1 id="titulo1">
           <span style="letter-spacing:0.15em;">
@@ -59,18 +59,25 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#sobre">sobre mi</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contacto">contacto</a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+  <div id="toTop">
+      <a class="nav-link js-scroll-trigger" href="#page-top">
+          <ion-icon name="arrow-up"></ion-icon>
+      </a>
+  </div>
+
   <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>Enrico Rapalin</h1>
-      <p class="lead">Sano & simple</p>
+    <div class="wrapper text-right slogan">
+      <p>Sano</p>
+      <br>
+      <p>&</p>
+      <br>
+      <p>Simple</p>
     </div>
   </header>
 
@@ -111,15 +118,17 @@
                 Encontra mas recetas en
               </p>
             </span>
-            <div style="width: 79px; height: 79px">
-              <a href="https://www.instagram.com/enricorapalin/">
-                <img style="filter: url(&quot;#faded-comp-jt7gbgr2img&quot;); outline: transparent solid 1px; object-position: 50% 50%; width: 79px; height: 79px; object-fit: cover;" alt="Black_Instagram_icon.svg.png" data-type="image" itemprop="image" src="https://static.wixstatic.com/media/4383c7_2e030d8dc05b4c5b948763c67a3ea4ba~mv2.png/v1/fill/w_158,h_158,al_c,q_80,usm_0.66_1.00_0.01/Black_Instagram_icon_svg.webp">
-              </a>
-            </div>
-            <div style="width: 79px; height: 79px;">
-              <a href="https://www.youtube.com/channel/UCY_dyl5CEoQ-hSc4p0czBAA">
-                <img style="filter: url(&quot;#faded-comp-jt7gbgr2img&quot;); outline: transparent solid 1px; object-position: 50% 50%; width: 79px; height: 79px; object-fit: cover;" alt="Black_Instagram_icon.svg.png" data-type="image" itemprop="image" src="https://static.wixstatic.com/media/4383c7_6ba899760dbc4f759eb578a4a06478f0~mv2.png/v1/fill/w_158,h_160,al_c,q_80,usm_0.66_1.00_0.01/14326.webp">
-              </a>
+            <div style="display: inline-block">
+              <div style="width: 79px; height: 79px">
+                <a href="https://www.instagram.com/enricorapalin/">
+                  <img style="filter: url(&quot;#faded-comp-jt7gbgr2img&quot;); outline: transparent solid 1px; object-position: 50% 50%; width: 79px; height: 79px; object-fit: cover;" alt="Black_Instagram_icon.svg.png" data-type="image" itemprop="image" src="https://static.wixstatic.com/media/4383c7_2e030d8dc05b4c5b948763c67a3ea4ba~mv2.png/v1/fill/w_158,h_158,al_c,q_80,usm_0.66_1.00_0.01/Black_Instagram_icon_svg.webp">
+                </a>
+              </div>
+              <div style="width: 79px; height: 79px;">
+                <a href="https://www.youtube.com/channel/UCY_dyl5CEoQ-hSc4p0czBAA">
+                  <img style="filter: url(&quot;#faded-comp-jt7gbgr2img&quot;); outline: transparent solid 1px; object-position: 50% 50%; width: 79px; height: 79px; object-fit: cover;" alt="Black_Instagram_icon.svg.png" data-type="image" itemprop="image" src="https://static.wixstatic.com/media/4383c7_6ba899760dbc4f759eb578a4a06478f0~mv2.png/v1/fill/w_158,h_160,al_c,q_80,usm_0.66_1.00_0.01/14326.webp">
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -221,7 +230,7 @@
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
-    <div class="container">
+    <div class="wrapper">
       <p class="m-0 text-center text-white">
           Enrico Rapalin
           <p class="m-0 text-white">&copy; 2019 - Todos los derechos reservados</p>
@@ -232,12 +241,14 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
+  <script src="basic.js"></script>
 
 </body>
 

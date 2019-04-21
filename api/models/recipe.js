@@ -8,8 +8,8 @@ var RecipeSchema = Schema({
 	video: String,
 	image: String, 
 	description: String,
-	ingredients: [{ingredient: { type: Schema.ObjectId, ref: 'Ingredient'}}],
-	tag: {type: Array}
+	ingredients: [{type: String}],
+	tags: [{type: String}]
 });
 
 module.exports = mongoose.model('Recipe', RecipeSchema);

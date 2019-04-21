@@ -7,7 +7,8 @@ var app = express();
 
 
 //cargar rutas
-//var user_routes = require('./routes/user');
+var user_routes = require('./routes/user');
+var recipe_routes = require('./routes/recipe');
 
 
 
@@ -28,10 +29,9 @@ app.use((req, res, next)=>{
 });
 
 //carga rutas base
-//app.use('/api', user_routes);
-app.get('/prueba', (req,res)=>{
-    res.status(200).send({message: "Bienvenido a la api de Enrico"});
-});
+
+app.use('/api', user_routes);
+app.use('/api', recipe_routes);
 
 
 module.exports = app;
